@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/gozer_bg.qm</file>
+        <file alias="de">locale/gozer_de.qm</file>
+        <file alias="en">locale/gozer_en.qm</file>
+        <file alias="es">locale/gozer_es.qm</file>
+        <file alias="fi">locale/gozer_fi.qm</file>
+        <file alias="fr">locale/gozer_fr.qm</file>
+        <file alias="it">locale/gozer_it.qm</file>
+        <file alias="ja">locale/gozer_ja.qm</file>
+        <file alias="nl">locale/gozer_nl.qm</file>
+        <file alias="pl">locale/gozer_pl.qm</file>
+        <file alias="pt">locale/gozer_pt.qm</file>
+        <file alias="ru">locale/gozer_ru.qm</file>
+        <file alias="sk">locale/gozer_sk.qm</file>
+        <file alias="sv">locale/gozer_sv.qm</file>
+        <file alias="vi">locale/gozer_vi.qm</file>
+        <file alias="zh_CN">locale/gozer_zh_CN.qm</file>
+        <file alias="zh_TW">locale/gozer_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef DASH_BIP39_H
-#define DASH_BIP39_H
+#ifndef GOZER_BIP39_H
+#define GOZER_BIP39_H
 
 #include "support/allocators/secure.h"
 

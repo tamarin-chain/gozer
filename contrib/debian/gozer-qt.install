@@ -1,0 +1,6 @@
+usr/local/bin/gozer-qt usr/bin
+share/pixmaps/gozer32.xpm usr/share/pixmaps
+share/pixmaps/gozer16.xpm usr/share/pixmaps
+share/pixmaps/gozer128.png usr/share/pixmaps
+debian/gozer-qt.desktop usr/share/applications
+debian/gozer-qt.protocol usr/share/kde4/services/

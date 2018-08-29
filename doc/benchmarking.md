@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Dash Core has an internal benchmarking framework, with benchmarks
+Gozer Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling Dash Core, the benchmarks can be run with:
-`src/bench/bench_dash`
+After compiling Gozer Core, the benchmarks can be run with:
+`src/bench/bench_gozer`
 
 The output will look similar to:
 ```
