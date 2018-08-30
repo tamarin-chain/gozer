@@ -1,0 +1,3 @@
+Take a look at the bitcoin fork of counterparty and see what they are doing with transaction indexing - I think we need to enable by default
+simplify GetBlockSubsidy - MAX should be deterministic. Maybe just restore the base bitcoin GetBlockSubsidy
+Remove all 'patches' that account with differing block heights for legacy dash, since we are starting from block 0
