@@ -199,10 +199,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
 
 
-        vSeeds.push_back(CDNSSeedData("gozer.org", "dnsseed.gozer.org"));
-        vSeeds.push_back(CDNSSeedData("gozerdot.io", "dnsseed.gozerdot.io"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("gozerpay.io", "dnsseed.gozerpay.io"));
+        // vSeeds.push_back(CDNSSeedData("gozer.org", "dnsseed.gozer.org"));
+        // vSeeds.push_back(CDNSSeedData("gozerdot.io", "dnsseed.gozerdot.io"));
+        // vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
+        // vSeeds.push_back(CDNSSeedData("gozerpay.io", "dnsseed.gozerpay.io"));
 
         // Gozer addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -327,8 +327,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("gozerdot.io",  "testnet-seed.gozerdot.io"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
+        // vSeeds.push_back(CDNSSeedData("gozerdot.io",  "testnet-seed.gozerdot.io"));
+        // vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
 
         // Testnet Gozer addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
