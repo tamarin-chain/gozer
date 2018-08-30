@@ -8,13 +8,80 @@
 cmake_minimum_required(VERSION 3.7)
 project(gozer)
 
-set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_CXX_STANDARD 11)
 
-include_directories(
-        src
-        src/leveldb/include
-        src/univalue/include
-)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+add_custom_target(gozer COMMAND make -C ${gozer_SOURCE_DIR}
+        CLION_EXE_DIR=${PROJECT_BINARY_DIR})
+
+#include_directories(
+#        src
+#        src/leveldb/include
+#        src/univalue/include
+#)
+
+include_directories(.)
+include_directories(build-aux)
+include_directories(contrib)
+include_directories(dash-docs)
+include_directories(depends)
+include_directories(doc)
+include_directories(docker)
+include_directories(qa)
+include_directories(share)
+include_directories(src)
+include_directories(src/bench)
+include_directories(src/compat)
+include_directories(src/config)
+include_directories(src/consensus)
+include_directories(src/crypto)
+include_directories(src/crypto/ctaes)
+include_directories(src/leveldb)
+include_directories(src/leveldb/db)
+include_directories(src/leveldb/doc)
+include_directories(src/leveldb/helpers)
+include_directories(src/leveldb/helpers/memenv)
+include_directories(src/leveldb/include)
+include_directories(src/leveldb/include/leveldb)
+include_directories(src/leveldb/issues)
+include_directories(src/leveldb/port)
+include_directories(src/leveldb/port/win)
+include_directories(src/leveldb/table)
+include_directories(src/leveldb/util)
+include_directories(src/obj)
+include_directories(src/obj-test)
+include_directories(src/policy)
+include_directories(src/primitives)
+include_directories(src/qt)
+include_directories(src/qt/test)
+include_directories(src/rpc)
+include_directories(src/script)
+include_directories(src/secp256k1)
+include_directories(src/secp256k1/build-aux)
+include_directories(src/secp256k1/contrib)
+include_directories(src/secp256k1/include)
+include_directories(src/secp256k1/obj)
+include_directories(src/secp256k1/sage)
+include_directories(src/secp256k1/src)
+include_directories(src/secp256k1/src/asm)
+include_directories(src/secp256k1/src/java)
+include_directories(src/secp256k1/src/modules)
+include_directories(src/secp256k1/src/modules/ecdh)
+include_directories(src/secp256k1/src/modules/recovery)
+include_directories(src/support)
+include_directories(src/support/allocators)
+include_directories(src/test)
+include_directories(src/univalue)
+include_directories(src/univalue/build-aux)
+include_directories(src/univalue/gen)
+include_directories(src/univalue/include)
+include_directories(src/univalue/lib)
+include_directories(src/univalue/pc)
+include_directories(src/univalue/test)
+include_directories(src/wallet)
+include_directories(src/wallet/test)
+include_directories(src/zmq)
 
 add_definitions(
         -DENABLE_WALLET=1
@@ -62,4 +129,4 @@ file(GLOB SOURCE_FILES
         src/rpc/*.h
         )
 
-add_executable(gozer ${SOURCE_FILES})
+#add_executable(gozer ${SOURCE_FILES})
