@@ -186,8 +186,8 @@ public:
          * a large 32-bit integer with any alignment.
          */
         pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
+        pchMessageStart[1] = 0xcd;
+        pchMessageStart[2] = 0xbe;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
         nDefaultPort = 8888;
@@ -200,8 +200,8 @@ public:
 
         // vSeeds.push_back(CDNSSeedData("gozer.org", "dnsseed.gozer.org"));
 
-        // Gozer addresses start with 'X'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
+        // Gozer addresses start with 'G'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
         // Gozer script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Gozer private keys start with '7' or 'X'
@@ -226,7 +226,7 @@ public:
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        strSporkAddress = "Xgtyuk76vhuFW2iT7UAiHgNdWXCf3J34wh";
+        strSporkAddress = "GQdw3Rmr6X5V76YjjHt52JKCFUCqeFhgkj";
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
@@ -307,9 +307,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000004a7878409189b7a8f75b3815d9b8c45ee8f79955a6c727d83bddb04"); // 143200
 
-        pchMessageStart[0] = 0xec;
-        pchMessageStart[1] = 0x2e;
-        pchMessageStart[2] = 0xac;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xfa;
+        pchMessageStart[2] = 0xdc;
         pchMessageStart[3] = 0xff;
         vAlertPubKey = ParseHex("04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412");
         nDefaultPort = 18888;
@@ -326,8 +326,8 @@ public:
         // nodes with support for servicebits filtering should be at the top
         // vSeeds.push_back(CDNSSeedData("gozerdot.io",  "testnet-seed.gozerdot.io"));
 
-        // Testnet Gozer addresses start with 'y'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
+        // Testnet Gozer addresses start with 'g'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,98);
         // Testnet Gozer script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
@@ -350,7 +350,7 @@ public:
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
+        strSporkAddress = "gTzohMJWTMz7WUqRoSDeNREq35yHjWTLUV";
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
@@ -431,9 +431,9 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x000000000000000000000000000000000000000000000000000000000000000");
 
-        pchMessageStart[0] = 0x2e;
+        pchMessageStart[0] = 0xfb;
         pchMessageStart[1] = 0xac;
-        pchMessageStart[2] = 0xff;
+        pchMessageStart[2] = 0xfb;
         pchMessageStart[3] = 0xec;
         vAlertPubKey = ParseHex("04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412");
         nDefaultPort = 18888;
@@ -451,8 +451,8 @@ public:
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("gozerevo.org",  "devnet-seed.gozerevo.org"));
 
-        // Testnet Gozer addresses start with 'y'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
+        // Testnet Gozer addresses start with 'g'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,98);
         // Testnet Gozer script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
@@ -475,7 +475,7 @@ public:
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
+        strSporkAddress = "gTzohMJWTMz7WUqRoSDeNREq35yHjWTLUV";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
@@ -548,10 +548,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xcf;
+        pchMessageStart[2] = 0xbf;
+        pchMessageStart[3] = 0xfc;
         nDefaultPort = 18884;
         nPruneAfterHeight = 1000;
 
@@ -573,7 +573,7 @@ public:
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
         // privKey: cP4EKFyJsHT39LDqgdcB43Y3YXjNyjb5Fuas1GQSeAtjnZWmZEQK
-        strSporkAddress = "yj949n1UH6fDhw6HtVE5VMj2iSTaSWBMcW";
+        strSporkAddress = "gTzohMJWTMz7WUqRoSDeNREq35yHjWTLUV";
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
@@ -586,8 +586,8 @@ public:
             0
         };
 
-        // Regtest Gozer addresses start with 'y'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
+        // Regtest Gozer addresses start with 'g'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,98);
         // Regtest Gozer script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Regtest private keys start with '9' or 'c' (Bitcoin defaults)
